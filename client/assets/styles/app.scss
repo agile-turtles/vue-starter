@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body,
+#app,
+#vue-app {
+  height: 100%;
+}
+
+#vue-app {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+header {
+  flex-shrink: 0;
+  height: 65px;
+  background: linear-gradient(45deg, #4f00bc, #29abe2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 50px;
+  background: linear-gradient(45deg, #312a6c, #852d91);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

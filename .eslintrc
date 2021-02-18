@@ -1,0 +1,87 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "@babel/eslint-parser"
+  },
+  "extends": ["eslint:recommended", "plugin:vue/recommended", "plugin:prettier/recommended"],
+  "plugins": ["import", "jest"],
+  "rules": {
+    "vue/comment-directive": "off",
+    "vue/no-v-html": "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/html-self-closing": "off",
+    "vue/html-indent": "off",
+    "vue/html-closing-bracket-spacing": "error",
+    "vue/html-closing-bracket-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "always"
+      }
+    ],
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      { "registeredComponentsOnly": false, "ignores": ["i18n"] }
+    ],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 20,
+        "multiline": {
+          "max": 1,
+          "allowFirstLine": false
+        }
+      }
+    ],
+    "import/first": "error",
+    "import/named": "error",
+    "import/default": "error",
+    "import/export": "error",
+    "import/no-mutable-exports": "error",
+    "space-before-function-paren": "off",
+    "no-var": "error",
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
+    "prefer-const": "error",
+    "dot-notation": "error",
+    "no-multiple-empty-lines": "error",
+    "no-new-wrappers": "error",
+    "no-new-object": "error",
+    "template-curly-spacing": ["error", "never"],
+    "consistent-return": "error",
+    "no-confusing-arrow": "error",
+    "prefer-spread": "error",
+    "prefer-destructuring": "error",
+    "no-prototype-builtins": "error",
+    "no-param-reassign": "error",
+    "prefer-arrow-callback": "error",
+    "default-case": "error",
+    "eqeqeq": "error",
+    "no-eval": "error",
+    "no-loop-func": "error",
+    "no-lonely-if": "error",
+    "radix": "error",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] },
+      { "blankLine": "always", "prev": "directive", "next": "*" },
+      { "blankLine": "any", "prev": "directive", "next": "directive" }
+    ],
+    "one-var": ["error", "never"],
+    "object-shorthand": ["error", "always"],
+    "prefer-template": "error",
+    "no-console": "warn",
+    "spaced-comment": "warn",
+    "require-atomic-updates": "off"
+  },
+  "env": {
+    "jest/globals": true,
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "NODE_ENV": true
+  }
+}
