@@ -1,5 +1,5 @@
 {
-  "name": "vue-bleeding-edge-starter",
+  "name": "vue-starter",
   "version": "21.2.1",
   "description": "Starter for Vue.js projects with understandable webpack config and bleeding edge updated dependencies",
   "main": "client/index.js",
