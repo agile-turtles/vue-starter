@@ -3,13 +3,17 @@
 
 ## Concept
 
-This is a starter boilerplate for Vue.js applications which was built mainly for my personal projects starter as well as for developers that do not like the black box approach of `@vue/cli`.
+This is a starter boilerplate for Vue.js applications for developers that prefer a white box / customizable approach in favor of `@vue/cli`.
+
+## Prerequisites
+
+- Node.js >= 14
 
 ### Bundling
 
 - an understandable and as simple as possible `webpack.config.js` in 120 LoC
 
-- code splitting in production for `node_modules` and app code (`vendor~app-bundle` and `app-bundle` respectively)
+- bundle splitting in production for `node_modules` and app code (`vendor~app-bundle` and `app-bundle` respectively)
 
 ### Styling
 
@@ -35,8 +39,8 @@ This is a starter boilerplate for Vue.js applications which was built mainly for
 
 1. Clone or download the repo to where you want to use for development
 
-1. `yarn && yarn build` to install dependencies and to create the public folder that contains the font assets (you don't need to run `yarn build` if you don't want the fonts yet)
+1. `npm install && npm run build` to install dependencies and to create the public folder that contains the font assets (you don't need to run `npm run build` if you don't want the fonts yet)
 
-1. `yarn dev` to develop
+1. `npm run dev` to develop
 
 ## License [MIT](https://oss.ninja/mit)
