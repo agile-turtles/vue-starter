@@ -30,7 +30,8 @@ const baseConfig = {
     extensions: ['.js', '.vue'],
     alias: {
       vue$: 'vue/dist/vue.runtime.js',
-      '@': path.join(__dirname, './client'),
+      components: path.join(__dirname, './client/components'),
+      assets: path.join(__dirname, './client/assets'),
     },
   },
   plugins: [
